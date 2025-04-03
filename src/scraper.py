@@ -14,7 +14,7 @@ chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
 
 # Putanja do ChromeDriver-a
-service = Service("chromedriver.exe")  # Zamijeni ako treba
+service = Service("../chromedriver.exe")  # Zamijeni ako treba
 
 # Pokreni browser
 driver = webdriver.Chrome(service=service, options=chrome_options)
